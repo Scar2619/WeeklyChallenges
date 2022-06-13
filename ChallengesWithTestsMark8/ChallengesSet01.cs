@@ -41,6 +41,7 @@ namespace ChallengesWithTestsMark8
             {
                 return number2;
             }
+            //return number1 < number2 ? number1 : number2;
         }
 
         public long Multiply(long factor1, long factor2)
@@ -48,6 +49,8 @@ namespace ChallengesWithTestsMark8
             //throw new NotImplementedException();
             var answer = factor1 *= factor2;
             return answer;
+
+            //return factor1 * factor2;
         }
 
         public string GetGreeting(string nameOfPerson)
@@ -58,6 +61,8 @@ namespace ChallengesWithTestsMark8
                 return $"Hello!";
             }
             else return $"Hello, {nameOfPerson}!";
+
+            //return string.IsNullOrEmpty(nameOfPerson) ? "Hello!" : $"Hello, {nameOfPerson}!";
 
         }
 
