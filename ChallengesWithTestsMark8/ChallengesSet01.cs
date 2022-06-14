@@ -14,6 +14,7 @@ namespace ChallengesWithTestsMark8
             {
                 return false;
             }
+            // return num1 == num2;
         }
 
         public double Subtract(double minuend, double subtrahend)
@@ -21,6 +22,7 @@ namespace ChallengesWithTestsMark8
             //throw new NotImplementedException();
             var answer = minuend -= subtrahend;
             return answer;
+            //return minuend - subtrahend;
         }
 
         public int Add(int number1, int number2)
@@ -28,6 +30,7 @@ namespace ChallengesWithTestsMark8
             //throw new NotImplementedException();
             var answer = number1 += number2;
             return answer;
+            //return number1 + number2;
         }
 
         public int GetSmallestNumber(int number1, int number2)
