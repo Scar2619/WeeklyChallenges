@@ -43,7 +43,7 @@ namespace ChallengesWithTestsMark8
             //throw new NotImplementedException();
             //biz.Name.Replace(biz.Name, "TrueCoders");
             biz.Name = "TrueCoders";
-
+            //biz.Name = biz.Name.Replace(biz.Name, "TrueCoders");
         }
 
         public bool CouldFormTriangle(int sideLength1, int sideLength2, int sideLength3)
@@ -105,7 +105,10 @@ namespace ChallengesWithTestsMark8
 
         public int Factorial(int number)
         {//DONE
-
+            if (number < 0)
+            {
+                throw new ArgumentOutOfRangeException();
+            }
             if (number == 0 || number == 1)
             {
                 return 1;
