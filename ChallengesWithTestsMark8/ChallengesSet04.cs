@@ -20,6 +20,8 @@ namespace ChallengesWithTestsMark8
                 else sum -= i;
             }
             return sum;
+
+            //return numbers.Where(x => x % 2 == 0).Sum() - numbers.Where(x => x % 2 != 0).Sum();
         }
 
         public int GetLengthOfShortestString(string str1, string str2, string str3, string str4)
@@ -40,17 +42,17 @@ namespace ChallengesWithTestsMark8
 
         public void ChangeBusinessNameTo_TrueCoders(Business biz)
         {//DONE
-            //throw new NotImplementedException();
-            //biz.Name.Replace(biz.Name, "TrueCoders");
+
             biz.Name = "TrueCoders";
-            //biz.Name = biz.Name.Replace(biz.Name, "TrueCoders");
+
         }
 
         public bool CouldFormTriangle(int sideLength1, int sideLength2, int sideLength3)
         {//DONE
 
-            if (sideLength1 + sideLength2 <= sideLength3 || sideLength1 + sideLength3 <= sideLength2 ||
-                            sideLength2 + sideLength3 <= sideLength1)
+            if (sideLength1 + sideLength2 <= sideLength3 ||
+                sideLength1 + sideLength3 <= sideLength2 ||
+                sideLength2 + sideLength3 <= sideLength1)
             {
                 return false;
             }
@@ -66,6 +68,8 @@ namespace ChallengesWithTestsMark8
             double i = 0;
             string s = input;
             return double.TryParse(s, out i);
+
+            //return double.TryParse(input, out double number);
         }
 
 
@@ -79,6 +83,18 @@ namespace ChallengesWithTestsMark8
                 return true;
             }
             return false;
+
+
+            //var majority = (objs.Length / 2) + 1;
+            //var count = 0;
+            //foreach (var item in objs)
+            //{
+            //    if (item == null)
+            //    {
+            //        count++;
+            //    }
+            //}
+            //return (count >= majority);
         }
 
 
